@@ -59,10 +59,10 @@ export function GuestBannerSection() {
 
         {/* Navigation Buttons - Round white buttons with green arrows */}
         <div className="absolute top-1/2 left-4 z-20 hidden -translate-y-1/2 md:flex">
-          <CarouselPrevious className="static h-10 w-10 border-none bg-white/90 text-[#0a7a3e] shadow-lg transition-all hover:bg-white" />
+          <CarouselPrevious className="text-primary-color static h-10 w-10 border-none bg-white/90 shadow-lg transition-all hover:bg-white" />
         </div>
         <div className="absolute top-1/2 right-4 z-20 hidden -translate-y-1/2 md:flex">
-          <CarouselNext className="static h-10 w-10 border-none bg-white/90 text-[#0a7a3e] shadow-lg transition-all hover:bg-white" />
+          <CarouselNext className="text-primary-color static h-10 w-10 border-none bg-white/90 shadow-lg transition-all hover:bg-white" />
         </div>
 
         {/* Progress Bar at bottom */}
@@ -70,7 +70,7 @@ export function GuestBannerSection() {
           {[...Array(count)].map((_, i) => (
             <div
               key={i}
-              className={`my-auto h-1 flex-1 rounded-full transition-all duration-700 ${i === current ? "scale-y-125 bg-[#0a7a3e]" : "bg-transparent opacity-0"}`}
+              className={`my-auto h-1 flex-1 rounded-full transition-all duration-700 ${i === current ? "bg-primary-color scale-y-125" : "bg-transparent opacity-0"}`}
             />
           ))}
         </div>

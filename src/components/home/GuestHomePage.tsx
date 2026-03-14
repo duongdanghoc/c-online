@@ -7,7 +7,7 @@ export default function GuestHomePage() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-white">
       {/* Hero Section with Banner and Register Form */}
-      <div className="relative w-full overflow-hidden bg-[#e6f4f1] py-4 md:py-6 lg:py-8">
+      <div className="bg-muted relative w-full overflow-hidden py-4 md:py-6 lg:py-8">
         {/* Background Pattern Section - Wavy/Diagonal lines as seen in the image */}
         <div className="pointer-events-none absolute inset-0 z-0 opacity-40">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">

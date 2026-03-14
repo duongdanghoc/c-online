@@ -85,7 +85,7 @@ export function GuestGuidlineSection() {
             onClick={() => setActiveTab("guideline")}
             className={`rounded-full border-2 px-8 py-3 font-bold transition-all ${
               activeTab === "guideline"
-                ? "border-primary-color text-primary-color bg-[#e6f4f1] shadow-sm"
+                ? "border-primary-color text-primary-color bg-muted shadow-sm"
                 : "border-transparent bg-white text-slate-600 hover:bg-slate-50"
             }`}
           >
@@ -95,7 +95,7 @@ export function GuestGuidlineSection() {
             onClick={() => setActiveTab("order")}
             className={`rounded-full border-2 px-8 py-3 font-bold transition-all ${
               activeTab === "order"
-                ? "border-primary-color text-primary-color bg-[#e6f4f1] shadow-sm"
+                ? "border-primary-color text-primary-color bg-muted shadow-sm"
                 : "border-transparent bg-white text-slate-600 hover:bg-slate-50"
             }`}
           >

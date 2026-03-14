@@ -97,7 +97,7 @@ export function GuestInfoSection() {
   };
 
   return (
-    <section className="w-full bg-[#f1f7f5] py-12 md:py-20">
+    <section className="bg-muted w-full py-12 md:py-20">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Title */}
         <div className="mb-8 pl-0 md:pl-4">
@@ -118,7 +118,7 @@ export function GuestInfoSection() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`flex-1 cursor-pointer px-4 py-3 text-sm font-semibold transition-all md:text-base ${
                     activeTab === tab.id
-                      ? "text-primary-color border-primary-color rounded-full border bg-[#e6f4f1]"
+                      ? "text-primary-color border-primary-color bg-muted rounded-full border"
                       : "hover:text-primary-color text-[#888888]"
                   }`}
                 >
