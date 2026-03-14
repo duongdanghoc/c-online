@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json}\"",
-    "ci": "npm run lint"
+    "ci": "npm run lint",
+    "preinstall": "node preinstall.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

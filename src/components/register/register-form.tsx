@@ -55,7 +55,7 @@ export default function RegisterForm() {
           <div className="shrink-0">
             <Select>
               <SelectTrigger className="focus:ring-primary-color h-[52px] w-full rounded-xl border-[#e2e8f0] bg-white px-5 text-sm text-[#94a3b8] shadow-none focus:ring-1">
-                <SelectValue placeholder="Bạn biết đến Buymed qua *" />
+                <SelectValue placeholder="Bạn biết đến C-Online qua *" />
               </SelectTrigger>
               <SelectContent className="rounded-xl border-[#e2e8f0] shadow-md">
                 <SelectItem value="facebook" className="py-2 text-sm">
@@ -74,6 +74,28 @@ export default function RegisterForm() {
             </Select>
           </div>
 
+          {/* Additional fields that will be scrollable */}
+          <div className="mt-1 flex flex-col gap-4 border-t border-slate-50 pt-4">
+            <div className="relative flex shrink-0 items-center">
+              <Smartphone
+                className="absolute left-4 h-5 w-5 text-[#1e1b4b]"
+                strokeWidth={1.5}
+              />
+              <Input
+                type="tel"
+                placeholder="Nhập số điện thoại *"
+                className="focus-visible:ring-primary-color h-[52px] rounded-xl border-[#e2e8f0] bg-white pl-12 text-sm shadow-none placeholder:text-[#94a3b8] focus-visible:ring-1"
+              />
+            </div>
+            <Input
+              placeholder="Tên hộ kinh doanh/doanh nghiệp *"
+              className="focus-visible:ring-primary-color h-[52px] rounded-xl border-[#e2e8f0] bg-white px-5 text-sm shadow-none placeholder:text-[#94a3b8] focus-visible:ring-1"
+            />
+            <Input
+              placeholder="Địa chỉ cụ thể *"
+              className="focus-visible:ring-primary-color h-[52px] rounded-xl border-[#e2e8f0] bg-white px-5 text-sm shadow-none placeholder:text-[#94a3b8] focus-visible:ring-1"
+            />
+          </div>
           {/* Checkbox Agreement */}
           <div className="mt-1 flex shrink-0 items-start gap-3">
             <div className="flex h-5 items-center">
@@ -98,29 +120,6 @@ export default function RegisterForm() {
               các điều kiện theo quy định của pháp luật để mua sản phẩm trên
               thuocsi.vn khi đăng ký tài khoản.
             </label>
-          </div>
-
-          {/* Additional fields that will be scrollable */}
-          <div className="mt-1 flex flex-col gap-4 border-t border-slate-50 pt-4">
-            <div className="relative flex shrink-0 items-center">
-              <Smartphone
-                className="absolute left-4 h-5 w-5 text-[#1e1b4b]"
-                strokeWidth={1.5}
-              />
-              <Input
-                type="tel"
-                placeholder="Nhập số điện thoại *"
-                className="focus-visible:ring-primary-color h-[52px] rounded-xl border-[#e2e8f0] bg-white pl-12 text-sm shadow-none placeholder:text-[#94a3b8] focus-visible:ring-1"
-              />
-            </div>
-            <Input
-              placeholder="Tên hộ kinh doanh/doanh nghiệp *"
-              className="focus-visible:ring-primary-color h-[52px] rounded-xl border-[#e2e8f0] bg-white px-5 text-sm shadow-none placeholder:text-[#94a3b8] focus-visible:ring-1"
-            />
-            <Input
-              placeholder="Địa chỉ cụ thể *"
-              className="focus-visible:ring-primary-color h-[52px] rounded-xl border-[#e2e8f0] bg-white px-5 text-sm shadow-none placeholder:text-[#94a3b8] focus-visible:ring-1"
-            />
           </div>
         </form>
       </div>
