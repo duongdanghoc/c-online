@@ -4,6 +4,7 @@
 
 @custom-variant dark (&:where(.dark2, .dark2 *));
 @theme inline {
+  --color-primary-color: rgb(114, 3, 4);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
