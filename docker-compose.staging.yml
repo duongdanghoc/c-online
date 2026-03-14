@@ -1,0 +1,9 @@
+services:
+  web:
+    ports:
+      - "33004:3000"
+    image: cpc1hn/c-online:APP_VERSION
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - TZ=Asia/Ho_Chi_Minh

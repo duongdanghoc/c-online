@@ -1,0 +1,8 @@
+services:
+  c-online:
+    ports:
+      - 3000:3000
+    image: cpc1hn/c-online:latest
+    container_name: c-online
+    restart: unless-stopped
+    env_file: ./.env

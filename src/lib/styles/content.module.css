@@ -1,0 +1,288 @@
+/* Base typography */
+.content {
+  font-family: Inter, "Inter fallback";
+  font-size: 16px;
+  line-height: 2;
+  color: #333;
+  max-width: 1000px;
+}
+
+.contentContainer {
+  position: relative;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  pointer-events: none;
+}
+
+.content h2:nth-child(1) {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+/* Typography scale */
+.content h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 1em;
+  color: hsl(213, 75%, 32%);
+  margin-bottom: 0.5em;
+}
+.content h3 {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 0.375em;
+}
+.content h4 {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 0.25em;
+}
+.content h5 {
+  font-size: 0.875em;
+  margin-bottom: 0.25em;
+}
+
+/* Lists */
+.content ul,
+.content ol {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+  @apply list-disc;
+}
+
+.content li {
+  margin-bottom: 0.5em;
+}
+
+.content img {
+  border-radius: 8px;
+}
+
+/* Image alignments */
+.content img.align-left {
+  float: left;
+  margin: 0 1em 0.5em 0;
+}
+
+.content img.align-center {
+  display: block;
+  margin: 1em auto;
+}
+
+.content img.align-right {
+  float: right;
+  margin: 0 0 0.5em 1em;
+}
+
+.content img.header-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.content img.icon-image {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0%;
+}
+
+/* Table styles */
+.content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.content th,
+.content td {
+  border: 1px solid #dee2e6;
+  padding: 0.75em;
+}
+
+.content th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.content tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.content tr:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.2s ease;
+}
+
+/* List styles */
+.content .custom-bullet-list {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+
+.content .checkmark-list {
+  list-style: none;
+  padding-left: 1.3em;
+}
+
+.content .checkmark-list li:before {
+  content: "✓";
+  color: #4caf50;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.3em;
+  margin-right: 0.3em;
+}
+
+/* Text utilities */
+.content .text-highlight {
+  background-color: #fff3cd;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.content a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.content .text-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.content .text-normal {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.content .text-lg {
+  font-weight: normal;
+  font-size: 1.125em;
+}
+
+.content .text-sm {
+  font-weight: normal;
+  font-size: 0.875em;
+}
+
+/* Figure */
+.content figure {
+  width: 100%;
+  margin: 1em 0;
+  height: 100%;
+}
+
+.content figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+
+.content figcaption {
+  font-size: 0.9em;
+  color: #6c757d;
+  text-align: center;
+}
+
+.content blockquote p {
+  display: inline;
+}
+
+.content blockquote {
+  background: rgb(253, 246, 240);
+  margin: 1.5em 0;
+  padding: 1.25em 1.5em;
+  position: relative;
+  border-radius: 12px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.content blockquote:before {
+  content: open-quote;
+  font-family: Georgia, serif;
+  color: #fd7d0d;
+  font-size: 4em;
+  position: absolute;
+  left: 8px;
+  top: -24px;
+  opacity: 0.25;
+}
+
+.content blockquote p {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #495057;
+  font-style: italic;
+}
+
+.content blockquote footer {
+  margin-top: 1em;
+  font-size: 0.9em;
+  color: #6c757d;
+  font-style: normal;
+}
+
+.content blockquote footer:before {
+  content: "—";
+  margin-right: 0.5em;
+}
+
+/* Warning Box */
+.content .warning-box {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 12px;
+  color: #856404;
+  padding: 1rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.content .warning-box::before {
+  content: "⚠️";
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  font-size: 1.5em;
+}
+
+/* Format */
+.content table {
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.875em;
+}
+
+.content table,
+.content th,
+.content td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+.content th,
+.content td {
+  background-color: oklch(96.8% 0.007 247.896);
+}
+
+.content thead td {
+  font-weight: 600;
+  background-color: oklch(86.9% 0.022 252.894);
+}
